@@ -496,6 +496,7 @@ class _NestedReorderableListState<T> extends State<_NestedReorderableList<T>> {
           ),
         ),
       ),
+      delay: Duration(milliseconds: 100), // Reduced delay before drag starts
       childWhenDragging: const SizedBox.shrink(),
       onDragStarted: () {
         setState(() {
